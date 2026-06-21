@@ -13,13 +13,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     color: var(--text-main);
     /* 優化：調深狗爪與骨頭的顏色與透明度，讓背景圖案更加明顯 */
     background-color: var(--bg-cream);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 120 120'%3E%3Cpath d='M20 15c-1.5 0-3 1.5-3 3s1.5 3 3 3 3-1.5 3-3-1.5-3-3-1.5zm8 3c-1.5 0-3 1.5-3 3s1.5 3 3 3 3-1.5 3-3-1.5-3-3-3zm-13 7c-2 0-3.5 1.5-3.5 3.5S13.5 32 15.5 32s3.5-1.5 3.5-3.5-1.5-3.5-3.5-3.5zm10 0c-2 0-3.5 1.5-3.5 3.5S23.5 32 25.5 32s3.5-1.5 3.5-3.5-1.5-3.5-3.5-3.5zm-5 8c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5 5.5-2.5 5.5-5.5-2.5-5.5-5.5-5.5z' fill='%23d0c2b2' fill-opacity='0.65'/%3E%3Cpath d='M80 85c1.5 0 3 1.5 3 3s-1.5 3-3 3-3-1.5-3-3 1.5-3 3-3zm-8 3c1.5 0 3 1.5 3 3s-1.5 3-3 3-3-1.5-3-3 1.5-3 3-3zm13 7c2 0 3.5 1.5 3.5 3.5S86.5 102 84.5 102s-3.5-1.5-3.5-3.5 1.5-3.5 3.5-3.5zm-10 0c2 0 3.5 1.5 3.5 3.5S76.5 102 74.5 102s-3.5-1.5-3.5-3.5 1.5-3.5 3.5-3.5zm5 8c3 0 5.5 2.5 5.5 5.5s-2.5 5.5-5.5 5.5-5.5-2.5-5.5-5.5 2.5-5.5 5.5-5.5z' fill='%23d0c2b2' fill-opacity='0.65'/%3E%3Cpath d='M90 20h10v5H90zm0 5h5v5h-5z' fill='%23d0c2b2' fill-opacity='0.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 120 120'%3E%3Cg fill='%23d0c2b2' fill-opacity='0.65'%3E%3C!-- 左上角的三趾貓爪 --%3E%3Ccircle cx='13' cy='22' r='4'/%3E%3Ccircle cx='23' cy='15' r='4'/%3E%3Ccircle cx='33' cy='22' r='4'/%3E%3Cpath d='M15 28c0-4 16-4 16 0 0 5-3 8-8 8s-8-3-8-8z'/%3E%3C!-- 右下角的三趾貓爪 --%3E%3Ccircle cx='73' cy='92' r='4'/%3E%3Ccircle cx='83' cy='85' r='4'/%3E%3Ccircle cx='93' cy='92' r='4'/%3E%3Cpath d='M75 98c0-4 16-4 16 0 0 5-3 8-8 8s-8-3-8-8z'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: repeat;
 }
 
@@ -51,14 +52,18 @@ a {
 .logo-img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    border: 2px solid var(--primary-light);
+
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     color: var(--primary-dark);
+}
+
+.logo-img img{
+    width: 60px;
+    height: 60px;
 }
 
 .logo-text h1 {
@@ -71,6 +76,7 @@ a {
     font-size: 0.8rem;
     color: var(--primary-light);
     letter-spacing: 0.5px;
+    padding-top: 0.3em;
 }
 
 .nav-menu {
@@ -302,6 +308,10 @@ a {
     margin-bottom: 15px;
 }
 
+.shop-icon > img{
+    border-radius: 50%;
+}
+
 .shop-card h3 {
     font-size: 1.25rem;
     color: var(--primary-dark);
@@ -326,6 +336,132 @@ a {
     text-align: left;
     border-left: 3px solid #d4a373;
 }
+
+/* --- 新增：7. 聯絡我們區塊 (Contact Us Section) --- */
+.contact-section {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    overflow: hidden;
+}
+
+/* 左側欄位：聯絡資訊 */
+.contact-left {
+    background-color: #faf2ea;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-left h3 {
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.contact-left p {
+    color: #776655;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    list-style: none;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.contact-details li i {
+    font-size: 1.2rem;
+    color: #d4a373;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* 右側欄位：聯絡表單 */
+.contact-right {
+    padding: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1.5px solid var(--card-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    outline: none;
+    background-color: #fffbf7;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d4a373;
+}
+
+.btn-submit {
+    background-color: var(--primary-dark);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-light);
+}
+
+
 
 /* --- 6. Footer 聯絡我們與尾頁 --- */
 footer {
@@ -453,6 +589,15 @@ footer {
 
 /* RWD 響應式優化 */
 /* RWD 響應式優化 */
+
+@media (max-width: 576px) {
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 @media (max-width: 992px) {
 
     .breed-grid,
@@ -484,5 +629,6 @@ footer {
 @media(min-width: 1200px) {
     .nav-item {
         font-size: .85rem;
+
     }
 }

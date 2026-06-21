@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     
+    <style>
+        /* 讓點擊導覽列錨點時擁有平滑滾動的視覺體驗 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,15 +26,15 @@
             </div>
         </div>
         <ul class="nav-menu">
-            <li class="nav-item"><i class="fa-solid fa-house"></i>品牌介紹</li>
-            <li class="nav-item"><i class="fa-solid fa-list-ol"></i>排行榜</li>
-            <li class="nav-item"><i class="fa-solid fa-dog"></i>犬種介紹</li>
-            <li class="nav-item"><i class="fa-solid fa-shirt"></i>周邊商品</li>
-            <li class="nav-item"><i class="fa-solid fa-envelope"></i>聯絡我們</li>
+            <a class="nav-item" href="#hero-section"><i class="fa-solid fa-house"></i>品牌介紹</a>
+            <a class="nav-item" href="#lab"><i class="fa-solid fa-list-ol"></i>排行榜</a>
+            <a class="nav-item" href="#breed-section"><i class="fa-solid fa-dog"></i>犬種介紹</a>
+            <a class="nav-item" href="#shop-section"><i class="fa-solid fa-shirt"></i>周邊商品</a>
+            <a class="nav-item" href="#contact-section"><i class="fa-solid fa-envelope"></i>聯絡我們</a>
         </ul>
     </nav>
 
-    <header class="hero-section">
+    <header class="hero-section" id="hero-section">
         <div class="hero-content">
             <h2>毛孩幸福創造所：<br>我們共創美好生活</h2>
             <p>在這裡，我們深信每一隻毛孩都是家裡不可或缺的成員。透過我們精心設計的空間與嚴選內容，與您一起譜寫和毛孩之間的溫馨故事，創造最純粹、最幸福的陪伴時光。</p>
@@ -36,45 +42,45 @@
         </div>
     </header>
 
-    <section class="section-title">排行榜</section>
+    <section class="section-title" id="lab">排行榜</section>
     <div class="rank-container">
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&q=80&w=200" alt="邊境牧羊犬">
+            <img class="rank-img" src="./img/邊境牧羊犬.jpg" alt="邊境牧羊犬">
             <div class="rank-info">
                 <h3>智商第一：邊境牧羊犬</h3>
                 <p>最聰明的狗狗，擁有驚人的學習能力與理解力。</p>
             </div>
         </div>
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&q=80&w=200" alt="黃金獵犬">
+            <img class="rank-img" src="./img/黃金獵犬.jpg" alt="黃金獵犬">
             <div class="rank-info">
-                <h3>溫暖人心：黃金獵犬</h3>
+                <h3>溫慢人心：黃金獵犬</h3>
                 <p>家庭的最佳夥伴，永遠充滿著如陽光般的熱情與溫柔。</p>
             </div>
         </div>
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=200" alt="德國牧羊犬">
+            <img class="rank-img" src="./img/德國牧羊犬.jpg" alt="德國牧羊犬">
             <div class="rank-info">
                 <h3>作者私心：德國牧羊犬</h3>
                 <p>忠誠且多才多藝，兼具帥氣與穩重，是我最愛的品種。</p>
             </div>
         </div>
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=200" alt="伯恩山犬">
+            <img class="rank-img" src="./img/伯恩山犬.jpg" alt="伯恩山犬">
             <div class="rank-info">
                 <h3>溫柔巨人：伯恩山犬</h3>
                 <p>強壯卻內心無比溫柔，這就是我們最引以為傲的Logo主角！</p>
             </div>
         </div>
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=200" alt="藍灣牧羊犬">
+            <img class="rank-img" src="./img/藍灣牧羊犬.jpg" alt="藍灣牧羊犬">
             <div class="rank-info">
                 <h3>顏值擔當：藍灣牧羊犬</h3>
                 <p>擁有如野狼般高冷迷人的外觀，內心卻極度溫順黏人。</p>
             </div>
         </div>
         <div class="rank-card">
-            <img class="rank-img" src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=200" alt="巨型貴賓犬">
+            <img class="rank-img" src="./img/巨型貴賓犬.jpg" alt="巨型貴賓犬">
             <div class="rank-info">
                 <h3>千金貴族：巨型貴賓犬</h3>
                 <p>優雅、充滿智慧且沒有體味，是最具貴族氣質的夥伴。</p>
@@ -82,7 +88,7 @@
         </div>
     </div>
 
-    <section class="section-title">犬種介紹</section>
+    <section class="section-title" id="breed-section">犬種介紹</section>
     <div class="breed-section">
         <div class="breed-tabs">
             <button class="tab-btn active" onclick="filterBreed('all')">全部犬種</button>
@@ -95,87 +101,87 @@
         </div>
 
         <div class="breed-grid" id="breedGrid">
-            <div class="breed-card" data-type="wolf" onclick="openModal('德國牧羊犬', 'wolf', 'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=200" alt="德國牧羊犬">
+            <div class="breed-card" data-type="wolf" onclick="openModal('德國牧羊犬', 'wolf', './img/德國牧羊犬.jpg')">
+                <img class="breed-img" src="./img/德國牧羊犬.jpg" alt="德國牧羊犬">
                 <div class="breed-name">德國牧羊犬</div>
             </div>
-            <div class="breed-card" data-type="wolf" onclick="openModal('捷克斯洛伐克狼犬', 'wolf', 'https://images.unsplash.com/photo-1591946614720-90a587da4a36?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1591946614720-90a587da4a36?auto=format&fit=crop&q=80&w=200" alt="捷克斯洛伐克狼犬">
+            <div class="breed-card" data-type="wolf" onclick="openModal('捷克斯洛伐克狼犬', 'wolf', './img/捷克斯洛伐克狼犬.jpg')">
+                <img class="breed-img" src="./img/捷克斯洛伐克狼犬.jpg" alt="捷克斯洛伐克狼犬">
                 <div class="breed-name">捷克斯洛伐克狼犬</div>
             </div>
-            <div class="breed-card" data-type="wolf" onclick="openModal('藍灣牧羊犬', 'wolf', 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=200" alt="藍灣牧羊犬">
+            <div class="breed-card" data-type="wolf" onclick="openModal('藍灣牧羊犬', 'wolf', './img/藍灣牧羊犬.jpg')">
+                <img class="breed-img" src="./img/藍灣牧羊犬.jpg" alt="藍灣牧羊犬">
                 <div class="breed-name">藍灣牧羊犬</div>
             </div>
 
-            <div class="breed-card" data-type="super-large" onclick="openModal('聖伯納犬', 'super-large', 'https://images.unsplash.com/photo-1587559070757-f72a388edbba?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1587559070777-f72a388edbba?auto=format&fit=crop&q=80&w=200" alt="聖伯納犬">
+            <div class="breed-card" data-type="super-large" onclick="openModal('聖伯納犬', 'super-large', './img/聖伯納犬.jpg')">
+                <img class="breed-img" src="./img/聖伯納犬.jpg" alt="聖伯納犬">
                 <div class="breed-name">聖伯納犬</div>
             </div>
-            <div class="breed-card" data-type="super-large" onclick="openModal('大丹犬', 'super-large', 'https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=200" alt="大丹犬">
+            <div class="breed-card" data-type="super-large" onclick="openModal('大丹犬', 'super-large', './img/大丹犬.jpg')">
+                <img class="breed-img" src="./img/大丹犬.jpg" alt="大丹犬">
                 <div class="breed-name">大丹犬</div>
             </div>
-            <div class="breed-card" data-type="super-large" onclick="openModal('馬士提夫犬', 'super-large', 'https://images.unsplash.com/photo-1597633425046-08f5110420b5?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1597633425046-08f5110420b5?auto=format&fit=crop&q=80&w=200" alt="馬士提夫犬">
+            <div class="breed-card" data-type="super-large" onclick="openModal('馬士提夫犬', 'super-large', './img/馬士提夫犬.jpg')">
+                <img class="breed-img" src="./img/馬士提夫犬.jpg" alt="馬士提夫犬">
                 <div class="breed-name">馬士提夫犬</div>
             </div>
 
-            <div class="breed-card" data-type="large" onclick="openModal('黃金獵犬', 'large', 'https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&q=80&w=200" alt="黃金獵犬">
+            <div class="breed-card" data-type="large" onclick="openModal('黃金獵犬', 'large', './img/黃金獵犬.jpg')">
+                <img class="breed-img" src="./img/黃金獵犬.jpg" alt="黃金獵犬">
                 <div class="breed-name">黃金獵犬</div>
             </div>
-            <div class="breed-card" data-type="large" onclick="openModal('拉不拉多犬', 'large', 'https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&q=80&w=200" alt="拉不拉多犬">
+            <div class="breed-card" data-type="large" onclick="openModal('拉不拉多犬', 'large', './img/拉不拉多犬.jpg')">
+                <img class="breed-img" src="./img/拉不拉多犬.jpg" alt="拉不拉多犬">
                 <div class="breed-name">拉不拉多犬</div>
             </div>
-            <div class="breed-card" data-type="large" onclick="openModal('哈士奇', 'large', 'https://images.unsplash.com/photo-1531804055935-76f44d7c3621?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?auto=format&fit=crop&q=80&w=200" alt="哈士奇">
+            <div class="breed-card" data-type="large" onclick="openModal('哈士奇', 'large', './img/哈士奇.jpg')">
+                <img class="breed-img" src="./img/哈士奇.jpg" alt="哈士奇">
                 <div class="breed-name">哈士奇</div>
             </div>
 
-            <div class="breed-card" data-type="medium" onclick="openModal('柴犬', 'medium', 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=200" alt="柴犬">
+            <div class="breed-card" data-type="medium" onclick="openModal('柴犬', 'medium', './img/柴犬.jpg')">
+                <img class="breed-img" src="./img/柴犬.jpg" alt="柴犬">
                 <div class="breed-name">柴犬</div>
             </div>
-            <div class="breed-card" data-type="medium" onclick="openModal('柯基犬', 'medium', 'https://images.unsplash.com/photo-1612536057832-2ff7eed58194?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1612536057832-2ff7eed58194?auto=format&fit=crop&q=80&w=200" alt="柯基犬">
+            <div class="breed-card" data-type="medium" onclick="openModal('柯基犬', 'medium', './img/柯基犬.jpg')">
+                <img class="breed-img" src="./img/柯基犬.jpg" alt="柯基犬">
                 <div class="breed-name">柯基犬</div>
             </div>
-            <div class="breed-card" data-type="medium" onclick="openModal('邊境牧羊犬', 'medium', 'https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&q=80&w=200" alt="邊境牧羊犬">
+            <div class="breed-card" data-type="medium" onclick="openModal('邊境牧羊犬', 'medium', './img/邊境牧羊犬.jpg')">
+                <img class="breed-img" src="./img/邊境牧羊犬.jpg" alt="邊境牧羊犬">
                 <div class="breed-name">邊境牧羊犬</div>
             </div>
 
-            <div class="breed-card" data-type="small" onclick="openModal('玩具貴賓犬', 'small', 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=200" alt="玩具貴賓犬">
+            <div class="breed-card" data-type="small" onclick="openModal('玩具貴賓犬', 'small', './img/玩具貴賓犬.jpg')">
+                <img class="breed-img" src="./img/玩具貴賓犬.jpg" alt="玩具貴賓犬">
                 <div class="breed-name">玩具貴賓犬</div>
             </div>
-            <div class="breed-card" data-type="small" onclick="openModal('博美犬', 'small', 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=200" alt="博美犬">
+            <div class="breed-card" data-type="small" onclick="openModal('博美犬', 'small', './img/博美犬.jpg')">
+                <img class="breed-img" src="./img/博美犬.jpg" alt="博美犬">
                 <div class="breed-name">博美犬</div>
             </div>
-            <div class="breed-card" data-type="small" onclick="openModal('吉娃娃', 'small', 'https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?auto=format&fit=crop&q=80&w=200" alt="吉娃娃">
+            <div class="breed-card" data-type="small" onclick="openModal('吉娃娃', 'small', './img/吉娃娃.jpg')">
+                <img class="breed-img" src="./img/吉娃娃.jpg" alt="吉娃娃">
                 <div class="breed-name">吉娃娃</div>
             </div>
 
-            <div class="breed-card" data-type="mini" onclick="openModal('迷你杜賓犬', 'mini', 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=200" alt="迷你杜賓犬">
+            <div class="breed-card" data-type="mini" onclick="openModal('迷你杜賓犬', 'mini', './img/迷你杜賓犬.jpg')">
+                <img class="breed-img" src="./img/迷你杜賓犬.jpg" alt="迷你杜賓犬">
                 <div class="breed-name">迷你杜賓犬</div>
             </div>
-            <div class="breed-card" data-type="mini" onclick="openModal('迷你法鬥', 'mini', 'https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&q=80&w=200" alt="迷你法鬥">
+            <div class="breed-card" data-type="mini" onclick="openModal('迷你法鬥', 'mini', './img/迷你法鬥.jpg')">
+                <img class="breed-img" src="./img/迷你法鬥.jpg" alt="迷你法鬥">
                 <div class="breed-name">迷你法鬥</div>
             </div>
-            <div class="breed-card" data-type="mini" onclick="openModal('迷你雪納瑞', 'mini', 'https://images.unsplash.com/photo-1553736026-ff14d158d222?auto=format&fit=crop&q=80&w=200')">
-                <img class="breed-img" src="https://images.unsplash.com/photo-1553736026-ff14d158d222?auto=format&fit=crop&q=80&w=200" alt="迷你雪納瑞">
+            <div class="breed-card" data-type="mini" onclick="openModal('迷你雪納瑞', 'mini', './img/迷你雪納瑞.png')">
+                <img class="breed-img" src="./img/迷你雪納瑞.png" alt="迷你雪納瑞">
                 <div class="breed-name">迷你雪納瑞</div>
             </div>
         </div>
     </div>
 
-    <section class="section-title">周邊商品 🐾</section>
+    <section class="section-title" id="shop-section">周邊商品 🐾</section>
     <div class="shop-section">
         <div class="shop-grid">
             <div class="shop-card">
@@ -212,6 +218,47 @@
                 <div class="shop-feature">
                     <strong>✨ 特色：</strong>消耗精力大幫手，毛孩獨自在家也不無聊。
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-title" id="contact-section">聯絡我們</section>
+    <div class="contact-section">
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>期待與您交流！</h3>
+                <p>不論是關於犬種飼養的疑問、周邊商品的定制細節，還是單純想跟我們分享您家毛孩的幸福日常，都歡迎隨時聯絡我們！🐾</p>
+                <ul class="contact-details">
+                    <li><i class="fa-solid fa-location-dot"></i>老技市 毛孩幸福創造所🐾</li>
+                    <li><i class="fa-solid fa-phone"></i>(013) 55 32-5339</li>
+                    <li><i class="fa-solid fa-clock"></i>週一至週日 10:00 - 21:00</li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('感謝您的留言！我們會盡快讓汪星人信使回覆您🐾');">
+                    <div class="form-group">
+                        <label for="userName">您的姓名</label>
+                        <input type="text" id="userName" placeholder="如何稱呼您呢？" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">電子郵件</label>
+                        <input type="email" id="userEmail" placeholder="方便我們回信的 Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="petType">家中的毛孩品種</label>
+                        <select id="petType">
+                            <option value="none">尚未飼養 / 其他</option>
+                            <option value="shepherd">牧羊犬 / 狼犬系</option>
+                            <option value="retriever">獵犬 / 大型犬系</option>
+                            <option value="small">小型犬 / 迷你犬系</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage">想對我們說的話</label>
+                        <textarea id="userMessage" rows="4" placeholder="寫下您與毛孩的故事或疑問..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">送出溫馨訊息 🐾</button>
+                </form>
             </div>
         </div>
     </div>
